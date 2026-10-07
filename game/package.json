@@ -1,0 +1,43 @@
+{
+    "name": "app",
+    "source": "index.html",
+    "scripts": {
+        "start": "parcel index.html --cache-dir ./.parcel-cache",
+        "build": "parcel build index.html --cache-dir ./.parcel-cache",
+        "poststart": "remove.bat",
+        "remove": "remove.bat",
+        "removeF": "del /s /q .\\dist\\*.fla",
+        "removeH": "for %i in (dist\\*.html) do if not %i==dist\\index.html del %i",
+        "removeSlash": "powershell.exe -ExecutionPolicy Bypass -File \"replace-slash.ps1\" \"./dist/index.html\" \"./dist/index.html\""
+    },
+    "staticFiles": {
+        "staticPath": "static"
+    },
+    "dependencies": {
+        "@esotericsoftware/spine-core": "^4.2.87",
+        "@esotericsoftware/spine-phaser-v3": "^4.2.87",
+        "@parcel/config-default": "^2.13.3",
+        "@parcel/transformer-typescript-tsc": "^2.13.3",
+        "@types/lodash": "^4.17.20",
+        "html2canvas": "^1.4.1",
+        "lodash": "^4.17.21",
+        "lottie-web": "^5.12.2",
+        "parcel": "^2.13.3",
+        "parcel-reporter-static-files-copy": "^1.5.3",
+        "phaser": "^3.90.0",
+        "reset-css": "^5.0.2",
+        "three": "^0.182.0"
+    },
+    "parcel-namer-hashless": {
+        "include": [
+            ".js$",
+            ".css$",
+            ".card.png$"
+        ],
+        "mode": "all"
+    },
+    "devDependencies": {
+        "parcel-namer-hashless": "^1.0.7",
+        "process": "^0.11.10"
+    }
+}

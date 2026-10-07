@@ -1,0 +1,6 @@
+﻿[
+    { "name": "진행 전", "color": "#5319e7", "description": "작업 시작 전" },
+    { "name": "진행 중", "color": "#0052cc", "description": "작업 진행 중" },
+    { "name": "수정 중", "color": "#e11d21", "description": "수정 중" },
+    { "name": "진행 완료", "color": "#009800", "description": "진행 완료" }
+]

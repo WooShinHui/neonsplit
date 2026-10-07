@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <script></script>
+        <title>Neon Split</title>
+        <script src="https://sdk.crazygames.com/crazygames-sdk-v3.js"></script>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background: #000;
+                overflow: hidden;
+            }
+
+            /* 반응형 로딩 컨테이너 */
+            #loading-container {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                z-index: 1000;
+                background: #000;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Arial Black', sans-serif;
+                transition: opacity 0.5s ease;
+            }
+
+            #loading-text {
+                color: #00ffff;
+                font-size: min(6vw, 40px);
+                margin-bottom: 30px;
+                text-shadow: 0 0 10px #00ffff;
+                letter-spacing: 5px;
+                text-align: center;
+                animation: blink 1.5s infinite;
+            }
+
+            #progress-box {
+                width: 80%;
+                max-width: 500px;
+                height: 12px;
+                border: 1px solid #00ffff;
+                box-shadow: 0 0 5px #00ffff;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+
+            #progress-bar {
+                width: 0%;
+                height: 100%;
+                background: #00ff88;
+                box-shadow: 0 0 15px #00ff88;
+                transition: width 0.2s ease-out;
+            }
+
+            #status-text {
+                color: #00ff88;
+                margin-top: 15px;
+                font-size: min(3.5vw, 14px);
+                letter-spacing: 1px;
+            }
+
+            @keyframes blink {
+                0%,
+                100% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: 0.4;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="contents">
+            <div id="loading-container">
+                <div id="loading-text">INITIALIZING SYSTEM...</div>
+                <div id="progress-box">
+                    <div id="progress-bar"></div>
+                </div>
+                <div id="status-text">
+                    LOADING ASSETS... <span id="percent-val">0%</span>
+                </div>
+            </div>
+        </div>
+        <script type="module" src="src/Main.ts"></script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "lib": ["dom", "dom.iterable", "esnext"],
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "baseUrl": ".",
+        "removeComments": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedIndexedAccess": true
+    }
+}
