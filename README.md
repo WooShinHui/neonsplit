@@ -1,6 +1,6 @@
 # Neon Split (네온 스플릿)
 
-![Neon Split Title](./screenshot_title.png)
+![Neon Split Title](./info/screenshot_title.png)
 
 > **네온 사이버펑크 감성의 고속 타이밍 & 리듬 리액션 아케이드 웹 게임**  
 > 좌우로 질주하는 네온 커서를 목표 지점에 완벽히 맞추어 바를 두 동강 내고, 콤보와 점수를 쌓아 글로벌 랭킹 정상을 차지하세요!
@@ -11,18 +11,18 @@
 
 ## 인게임 플레이 화면
 
-|          시작 & 글로벌 랭킹 화면          |              인게임 플레이 화면               |
-| :---------------------------------------: | :-------------------------------------------: |
-|  ![Start Screen](./screenshot_title.png)  | ![Gameplay Screen](./screenshot_gameplay.png) |
-| **타격 판정 & 바 분할 연출 (FLAWLESS!!)** |             **결과 및 통계 화면**             |
-|  ![Hit Effect](./screenshot_effect.png)   |   ![Result Screen](./screenshot_result.png)   |
+|           시작 & 글로벌 랭킹 화면            |                 인게임 플레이 화면                 |
+| :------------------------------------------: | :------------------------------------------------: |
+| ![Start Screen](./info/screenshot_title.png) | ![Gameplay Screen](./info/screenshot_gameplay.png) |
+|  **타격 판정 & 바 분할 연출 (FLAWLESS!!)**   |               **결과 및 통계 화면**                |
+| ![Hit Effect](./info/screenshot_effect.png)  |   ![Result Screen](./info/screenshot_result.png)   |
 
 ---
 
 ## 게임 조작 방법
 
--   **PC**: 마우스 좌클릭 또는 키보드 `Space` 키
--   **모바일 / 태블릿**: 화면 터치 (Tap)
+- **PC**: 마우스 좌클릭 또는 키보드 `Space` 키
+- **모바일 / 태블릿**: 화면 터치 (Tap)
 
 ---
 
@@ -30,10 +30,10 @@
 
 ### 1. 기본 규칙
 
--   게임 시작 시 **20초**의 제한 시간이 주어집니다.
--   좌우로 왕복 이동하는 흰색 네온 커서가 중앙의 **타깃 존(Target Zone)**에 도달했을 때 입력합니다.
--   정확도에 따라 판정이 결정되며, 남은 시간 증감과 점수, 콤보가 적용됩니다.
--   제한 시간이 **0초**가 되면 게임이 종료됩니다.
+- 게임 시작 시 **20초**의 제한 시간이 주어집니다.
+- 좌우로 왕복 이동하는 흰색 네온 커서가 중앙의 **타깃 존(Target Zone)**에 도달했을 때 입력합니다.
+- 정확도에 따라 판정이 결정되며, 남은 시간 증감과 점수, 콤보가 적용됩니다.
+- 제한 시간이 **0초**가 되면 게임이 종료됩니다.
 
 ### 2. 판정 시스템 (Judgment)
 
@@ -76,13 +76,13 @@
 
 ## 글로벌 리더보드 & 플랫폼 연동
 
--   **Firebase Realtime Database**: 전 세계 플레이어의 최고 기록 실시간 동기화
--   **FlagCDN 연동**: 플레이어 접속 국가 기반 50개국 이상의 국기 아이콘 자동 매핑
--   **CrazyGames SDK v3**:
-    -   `gameplayStart` / `gameplayStop` 라이프사이클 관리
-    -   유저네임 자동 연동
-    -   신기록 달성 시 축하 연출 (`happytime`)
-    -   게임 플레이 주기별 스마트 광고 (`requestAd('midgame')`)
+- **Firebase Realtime Database**: 전 세계 플레이어의 최고 기록 실시간 동기화
+- **FlagCDN 연동**: 플레이어 접속 국가 기반 50개국 이상의 국기 아이콘 자동 매핑
+- **CrazyGames SDK v3**:
+  - `gameplayStart` / `gameplayStop` 라이프사이클 관리
+  - 유저네임 자동 연동
+  - 신기록 달성 시 축하 연출 (`happytime`)
+  - 게임 플레이 주기별 스마트 광고 (`requestAd('midgame')`)
 
 ---
 
