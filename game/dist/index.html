@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/index.css"><script></script>
+        <title>Neon Split</title>
+        <script src="https://sdk.crazygames.com/crazygames-sdk-v3.js"></script>
+        <style>body {
+  background: #000;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#loading-container {
+  z-index: 1000;
+  background: #000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial Black, sans-serif;
+  transition: opacity .5s;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#loading-text {
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: min(6vw, 40px);
+  animation: 1.5s infinite blink;
+}
+
+#progress-box {
+  border: 1px solid #0ff;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  height: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 5px #0ff;
+}
+
+#progress-bar {
+  background: #0f8;
+  width: 0%;
+  height: 100%;
+  transition: width .2s ease-out;
+  box-shadow: 0 0 15px #0f8;
+}
+
+#status-text {
+  color: #0f8;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  font-size: min(3.5vw, 14px);
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .4;
+  }
+}
+</style>
+    </head>
+    <body>
+        <div id="contents">
+            <div id="loading-container">
+                <div id="loading-text">INITIALIZING SYSTEM...</div>
+                <div id="progress-box">
+                    <div id="progress-bar"></div>
+                </div>
+                <div id="status-text">
+                    LOADING ASSETS... <span id="percent-val">0%</span>
+                </div>
+            </div>
+        </div>
+        <script src="/index.js" defer=""></script>
+    </body>
+</html>
